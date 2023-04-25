@@ -4,6 +4,7 @@ import Section from './Section/Section';
 import Statistics from './Statistics/Statistics';
 import Notification from './Notification/Notification';
 import { Styled } from './StyleApp';
+
 export class App extends Component {
   state = {
     good: 0,
