@@ -8,17 +8,17 @@ const Statistics = ({ options, statistic, total, positivePercentage }) => {
       {options.map((name, i) => {
         return (
           <Styled.Numbers key={i}>
-            {name}:<Styled.Numbers>{statistic[name]}</Styled.Numbers>
+            {name}:<Styled.P>{statistic[name]}</Styled.P>
           </Styled.Numbers>
         );
       })}
-      <p>
-        Total: <Styled.Numbers>{total}</Styled.Numbers>
-      </p>
-      <Styled.P>
+      <Styled.Numbers>
+        Total: <Styled.P>{total}</Styled.P>
+      </Styled.Numbers>
+      <Styled.Numbers>
         Positive feedback:
-        <Styled.Numbers>{positivePercentage()}</Styled.Numbers>%
-      </Styled.P>
+        <Styled.P>{positivePercentage()}</Styled.P>%
+      </Styled.Numbers>
     </>
   );
 };
